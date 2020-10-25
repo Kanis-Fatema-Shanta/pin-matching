@@ -33,8 +33,7 @@ function number(num){
             break; 
         case 8:
             input.value += "8";
-            break;
-             
+            break;    
         case 9:
             input.value += "9";
             break;
@@ -44,3 +43,18 @@ function number(num){
     }
 }
 
+//clear_input_Screen
+document.getElementById("clear").addEventListener("click",function(){
+    document.getElementById("input-pin").value = "";
+})
+
+//backSpace 1 by one
+document.getElementById("space").addEventListener("click",function(){
+    var input = document.getElementById("input-pin");
+    var x = input.value;
+    if(x.length > 0 ){
+        x = x.substring(0 , x.length - 1);
+        input.value = x; 
+
+    }
+})
