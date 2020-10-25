@@ -7,8 +7,8 @@ body {
 }
 
 .half-wide-pin ,.half-wide-input   {
-    height: 600px;
-    background: #222436;
+    height: 650px;
+    background: #525258;
     padding: 40px;
     color: white;
     text-align: center;
@@ -29,7 +29,7 @@ input[type='text']:focus {
 }
 .button{
     width: 20%;
-    background: rgb(63, 62, 62);
+    background:rgb(163, 160, 160);
     color: white;
     padding: 20px;
     margin: 5px;
@@ -42,3 +42,19 @@ input[type='text']:focus {
     
 }
 
+.button:hover{
+    background:rgb(223, 222, 222);
+    color: black;
+}
+.submit-btn{
+    margin-top: 20px;
+    padding: 10px 100px;
+    border-radius: 10px;
+    background: rgb(59, 41, 32);
+    color:white;
+    font-size: 20px;
+    border: none;
+}
+.submit-btn:hover{
+    background:rgb(61, 2, 2);
+}
