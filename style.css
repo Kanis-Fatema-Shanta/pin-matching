@@ -13,3 +13,32 @@ body {
     color: white;
     text-align: center;
 }
+input[type='text']:focus {
+    background-color: #3D4153;
+    color: #fff;
+    font-size: 20px;
+}
+.numbers {
+    margin: 25px ,0;
+}
+
+
+.calc-button-row {
+    width: 100%;
+
+}
+.button{
+    width: 20%;
+    background: rgb(63, 62, 62);
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
