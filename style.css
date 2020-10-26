@@ -7,16 +7,33 @@ body {
 }
 
 .half-wide-pin ,.half-wide-input   {
-    height: 650px;
+    height: 600px;
     background: #525258;
     padding: 40px;
     color: white;
     text-align: center;
 }
+
+input[type='text']{
+    background-color: #5f6270;
+    padding: 10px 0px;
+    color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #858299;
+    height: 50px;
+    padding: 10px;
+}
 input[type='text']:focus {
-    background-color: #3D4153;
+    background-color: #848794;
     color: #fff;
     font-size: 20px;
+}
+
+
+
+#pin ,#input-pin{
+    text-align: center;
 }
 .numbers {
     margin: 25px ,0;
@@ -73,6 +90,11 @@ input[type='text']:focus {
     font-size: 20px;
     font-size: 30;
     text-align: center;
+   
+}
+.generate-btn:focus{
+    outline: none;
+    box-shadow: none;
 }
 .generate-pin:hover{
     background-color: darkblue;
@@ -82,6 +104,29 @@ input[type='text']:focus {
     background-color: #3D4153;
     font-size: 20px;
     text-align:center;
+}
+
+.notify {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    background: #222436;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 5px 20px;
+    display:none;
+}
+.notify-section{
+    width: 35%;
+    margin: 0 auto;
+}
+.action-left {
+    color: #FF3C5F;
+    margin-top: 10px;
+}
+
+#warning{
+    display: none;
 }
 
 

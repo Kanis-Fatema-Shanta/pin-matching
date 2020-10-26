@@ -74,6 +74,7 @@ document.getElementById("submit").addEventListener("click",function(){
         document.getElementById("input-pin").value = "";
         document.getElementById("pin").value = "";
 
+
     } 
     else if( input != pin){
         display("rightPinNotify","none")
@@ -93,7 +94,7 @@ document.getElementById("submit").addEventListener("click",function(){
 
         else if ( tryCount == 0){
             document.getElementById("submit").style.display = "none";
-             var notify = document.getElementById("notify");
+             var notify = document.getElementById("warning");
              notify.style.display ="block";
 
 
@@ -107,7 +108,7 @@ document.getElementById("create-pin").addEventListener("click",function(){
     document.getElementById("submit").style.margin = "auto";
     document.getElementById("submit").style.marginTop ="20px";
     display("notify","none")
-    document.getElementById("tryleft").innerText = 3;
+    document.getElementById("tryLeft").innerText = 3;
     display("wrongPinNotify","none")
     display("rightpinNotify","none")
     document.getElementById("input-pin").value = "";
