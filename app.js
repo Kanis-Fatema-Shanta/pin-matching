@@ -80,14 +80,14 @@ document.getElementById("submit").addEventListener("click",function(){
         display("wrongPinNotify","block")
         document.getElementById("input-pin").value = "";
 
-        var tryleft = document.getElementById("tryleft").innerText;
+        var tryleft = document.getElementById("tryLeft").innerText;
         var count = parseInt(tryleft);
         var tryCount = count - 1;
 
-        document.getElementById("tryleft").innerText = tryCount;
+        document.getElementById("tryLeft").innerText = tryCount;
 
         if(tryCount <= -1){
-            document.getElementById("tryleft").innerText = 0;
+            document.getElementById("tryLeft").innerText = 0;
             
         }
 
@@ -95,9 +95,25 @@ document.getElementById("submit").addEventListener("click",function(){
             document.getElementById("submit").style.display = "none";
              var notify = document.getElementById("notify");
              notify.style.display ="block";
-             
+
 
         }
 
     }
 })
+
+document.getElementById("create-pin").addEventListener("click",function(){
+    display("submit","block")
+    document.getElementById("submit").style.margin = "auto";
+    document.getElementById("submit").style.marginTop ="20px";
+    display("notify","none")
+    document.getElementById("tryleft").innerText = 3;
+    display("wrongPinNotify","none")
+    display("rightpinNotify","none")
+    document.getElementById("input-pin").value = "";
+
+})
+
+function display(id, property){
+    document.getElementById(id).style.display = property;
+}
