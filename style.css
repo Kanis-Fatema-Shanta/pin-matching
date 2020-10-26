@@ -3,13 +3,13 @@ body {
     height: 100vh;
 }
 .container {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .half-wide-pin ,.half-wide-input   {
-    height: 600px;
+    height: 550px;
     background: #525258;
-    padding: 40px;
+    padding: 30px;
     color: white;
     text-align: center;
 }
@@ -37,6 +37,7 @@ input[type='text']:focus {
 }
 .numbers {
     margin: 25px ,0;
+    padding-top: 15px;
 }
 
 
@@ -48,7 +49,7 @@ input[type='text']:focus {
     width: 20%;
     background:rgb(163, 160, 160);
     color: white;
-    padding: 20px;
+    padding: 12px;
     margin: 5px;
     display: inline-block;
     font-size: 30px;
@@ -64,7 +65,7 @@ input[type='text']:focus {
     color: black;
 }
 .submit-btn{
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 10px 100px;
     border-radius: 10px;
     background: rgb(59, 41, 32);

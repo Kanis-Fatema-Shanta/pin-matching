@@ -107,7 +107,7 @@ document.getElementById("create-pin").addEventListener("click",function(){
     display("submit","block")
     document.getElementById("submit").style.margin = "auto";
     document.getElementById("submit").style.marginTop ="20px";
-    display("notify","none")
+    display("warning","none")
     document.getElementById("tryLeft").innerText = 3;
     display("wrongPinNotify","none")
     display("rightpinNotify","none")
