@@ -58,3 +58,46 @@ document.getElementById("space").addEventListener("click",function(){
 
     }
 })
+
+// ---------------  pin matcher function --------------//
+
+document.getElementById("submit").addEventListener("click",function(){
+    var input = document.getElementById("input-pin").value;
+    var pin = document.getElementById("pin").value;
+    if(input == '' || pin == ''){
+        alert("please enter 4 digit pin or click generate pin");
+    }
+
+    else if (input == pin) {
+        display("rightPinNotify","block")
+        display("wrongPinNotify","none")
+        document.getElementById("input-pin").value = "";
+        document.getElementById("pin").value = "";
+
+    } 
+    else if( input != pin){
+        display("rightPinNotify","none")
+        display("wrongPinNotify","block")
+        document.getElementById("input-pin").value = "";
+
+        var tryleft = document.getElementById("tryleft").innerText;
+        var count = parseInt(tryleft);
+        var tryCount = count - 1;
+
+        document.getElementById("tryleft").innerText = tryCount;
+
+        if(tryCount <= -1){
+            document.getElementById("tryleft").innerText = 0;
+            
+        }
+
+        else if ( tryCount == 0){
+            document.getElementById("submit").style.display = "none";
+             var notify = document.getElementById("notify");
+             notify.style.display ="block";
+             
+
+        }
+
+    }
+})
